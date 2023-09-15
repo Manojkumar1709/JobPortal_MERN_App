@@ -48,10 +48,10 @@ app.use(cors());
 // app.get('/', (req, res) => {
 //     res.send("Hello from Node Js");
 // })
-app.use("/api", authRoutes);
-app.use("/api", userRoutes);
-app.use("/api", jobTypeRoute);
-app.use("/api", jobRoute);
+app.use("/", authRoutes);
+app.use("/", userRoutes);
+app.use("/", jobTypeRoute);
+app.use("/", jobRoute);
 
 // error middleware
 app.use(errorHandler);
